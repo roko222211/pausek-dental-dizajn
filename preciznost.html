@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paušek Dental — „Preciznost" (dizajn 2)</title>
+<meta name="description" content="Ordinacija dentalne medicine dr. Đurđica Paušek — Zagreb, od 1994." />
+<style>
+  @font-face{font-family:'IBM Plex Sans';font-weight:400;font-display:swap;src:url('public/fonts/plexsans-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:'IBM Plex Sans';font-weight:400;font-display:swap;src:url('public/fonts/plexsans-latin-ext-400.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'IBM Plex Sans';font-weight:500;font-display:swap;src:url('public/fonts/plexsans-latin-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:'IBM Plex Sans';font-weight:500;font-display:swap;src:url('public/fonts/plexsans-latin-ext-500.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'IBM Plex Sans';font-weight:600;font-display:swap;src:url('public/fonts/plexsans-latin-600.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:'IBM Plex Sans';font-weight:600;font-display:swap;src:url('public/fonts/plexsans-latin-ext-600.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'IBM Plex Sans';font-weight:700;font-display:swap;src:url('public/fonts/plexsans-latin-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:'IBM Plex Sans';font-weight:700;font-display:swap;src:url('public/fonts/plexsans-latin-ext-700.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'IBM Plex Mono';font-weight:400;font-display:swap;src:url('public/fonts/plexmono-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:'IBM Plex Mono';font-weight:400;font-display:swap;src:url('public/fonts/plexmono-latin-ext-400.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'IBM Plex Mono';font-weight:500;font-display:swap;src:url('public/fonts/plexmono-latin-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+FEFF,U+FFFD}
+  @font-face{font-family:'IBM Plex Mono';font-weight:500;font-display:swap;src:url('public/fonts/plexmono-latin-ext-500.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+2C60-2C7F,U+A720-A7FF}
+
+  :root{
+    --paper:#FBFCFD; --panel:#F2F5F8; --ink:#16202A; --muted:#5B6B78;
+    --line:#E1E7EC; --accent:#1F55C7; --accent-tint:#EAF1FC;
+    --sans:'IBM Plex Sans',system-ui,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,monospace;
+  }
+  *{box-sizing:border-box}
+  html,body{overflow-x:clip}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 32px}
+  a{color:inherit;text-decoration:none}
+  :focus-visible{outline:2.5px solid var(--accent);outline-offset:3px;border-radius:3px}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600;font-family:var(--mono)}
+  h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.022em;text-wrap:balance}
+  header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(251,252,253,.86);backdrop-filter:blur(8px);z-index:5}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .brand{display:flex;align-items:baseline;gap:10px}
+  .brand .toothmark{width:22px;height:23px;fill:var(--accent);flex:none;align-self:center}
+  .brand .wm{font-size:20px;font-weight:600;letter-spacing:-.02em;color:var(--ink)}
+  .brand .wtag{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+  nav{display:flex;align-items:center;gap:28px}
+  nav a{font-size:14.5px;font-weight:500;color:var(--muted)}
+  nav a:hover{color:var(--ink)}
+  .btn{background:var(--accent);color:#fff!important;font-weight:600;font-size:14px;padding:11px 20px;border-radius:7px}
+  .btn:hover{background:#1848ab}
+  .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;padding:84px 0 76px;align-items:center}
+  .hero h1{font-size:clamp(38px,5.4vw,66px);line-height:1.03;letter-spacing:-.03em}
+  .hero p.lead{font-size:19px;color:var(--muted);max-width:46ch;margin:24px 0 32px}
+  .hcta{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .btn-ghost{border:1px solid var(--line);padding:11px 20px;border-radius:7px;font-weight:600;font-size:14px;font-family:var(--mono)}
+  .btn-ghost:hover{border-color:var(--ink)}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:34px;position:relative;overflow:hidden}
+  .panel .tooth-bg{position:absolute;right:-40px;bottom:-46px;width:230px;height:260px;fill:#fff;opacity:.9}
+  .stat{display:flex;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);position:relative;z-index:1}
+  .stat:last-child{border-bottom:0}
+  .stat b{font-family:var(--mono);font-size:30px;font-weight:500;letter-spacing:-.02em;font-variant-numeric:tabular-nums;min-width:96px;color:var(--ink)}
+  .stat span{font-size:14px;color:var(--muted)}
+  section.blk{padding:64px 0;border-top:1px solid var(--line)}
+  .shead{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px}
+  .shead h2{font-size:clamp(26px,3.4vw,38px);letter-spacing:-.03em}
+  .shead p{color:var(--muted);max-width:40ch;margin:8px 0 0}
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .svc>div{padding:32px 34px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .svc>div:nth-child(2n){border-right:0}
+  .svc>div:nth-child(n+3){border-bottom:0}
+  .svc h3{font-size:20px;font-weight:600;margin-bottom:10px}
+  .svc h3 i{font-style:normal;color:var(--accent);font-size:11.5px;font-weight:600;letter-spacing:.08em;display:block;margin-bottom:9px;text-transform:uppercase;font-family:var(--mono)}
+  .svc p{color:var(--muted);font-size:15.5px;margin:0}
+  .team{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .tc{border:1px solid var(--line);border-radius:14px;padding:26px;background:#fff}
+  .tc .av{width:52px;height:52px;border-radius:50%;background:var(--accent-tint);color:var(--accent);display:grid;place-items:center;font-weight:600;font-size:16px;margin-bottom:16px;font-family:var(--mono)}
+  .tc h3{font-size:18px;font-weight:600}
+  .tc span{color:var(--muted);font-size:14px;font-family:var(--mono)}
+  .contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-family:var(--mono)}
+  table td{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}
+  table td:first-child{color:var(--muted)}
+  table td:last-child{text-align:right;font-weight:500;color:var(--ink)}
+  .info .k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);min-width:96px;padding-top:3px;font-family:var(--mono)}
+  .info .v{font-weight:500}
+  .info>div{display:flex;gap:14px}
+  footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:var(--mono)}
+  @media(max-width:820px){.hero,.svc,.team,.contact{grid-template-columns:1fr}.svc>div{border-right:0}.hero{gap:36px;padding:52px 0}nav a:not(.btn){display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#" aria-label="Paušek Dental">
+      <svg class="toothmark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5C8.4 2.5 5.5 4.6 5.5 8c0 2.2.8 3.8 1.3 6 .4 1.8.6 7 2.2 7 1.2 0 1.4-3.2 1.8-5 .22-1 .5-1.6 1.2-1.6s.98.6 1.2 1.6c.4 1.8.6 5 1.8 5 1.6 0 1.8-5.2 2.2-7 .5-2.2 1.3-3.8 1.3-6 0-3.4-2.9-5.5-6.5-5.5Z"/></svg>
+      <span class="wm">Paušek</span><span class="wtag">Dental</span>
+    </a>
+    <nav>
+      <a href="#usluge">Usluge</a><a href="#tim">Naš tim</a><a href="#onama">O nama</a><a href="#kontakt">Kontakt</a>
+      <a class="btn" href="#kontakt">Naručite se</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Ordinacija dentalne medicine · Zagreb</p>
+      <h1 style="margin-top:18px">Precizna dentalna skrb za vaš osmijeh — od 1994.</h1>
+      <p class="lead">Ugovorna ordinacija HZZO-a s modernom tehnologijom i timom koji kontinuirano prati nove materijale i metode. Od estetskih ispuna do implanto-protetike.</p>
+      <div class="hcta"><a class="btn" href="#kontakt">Naručite termin</a><a class="btn-ghost" href="tel:+38512332377">01 / 2332-377</a></div>
+    </div>
+    <div class="panel">
+      <svg class="tooth-bg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5C8.4 2.5 5.5 4.6 5.5 8c0 2.2.8 3.8 1.3 6 .4 1.8.6 7 2.2 7 1.2 0 1.4-3.2 1.8-5 .22-1 .5-1.6 1.2-1.6s.98.6 1.2 1.6c.4 1.8.6 5 1.8 5 1.6 0 1.8-5.2 2.2-7 .5-2.2 1.3-3.8 1.3-6 0-3.4-2.9-5.5-6.5-5.5Z"/></svg>
+      <div class="stat"><b>1994.</b><span>godina od kada uspješno poslujemo</span></div>
+      <div class="stat"><b>HZZO</b><span>ugovorna ordinacija dentalne medicine</span></div>
+      <div class="stat"><b>4</b><span>područja skrbi — od endodoncije do kirurgije</span></div>
+    </div>
+  </section>
+</div>
+<div class="wrap">
+  <section class="blk" id="usluge">
+    <div class="shead"><div><p class="eyebrow">Usluge</p><h2 style="margin-top:12px">Cjelovita dentalna skrb na jednom mjestu</h2></div><p>Dio usluga pokriven je putem HZZO-a, a vanstandardne usluge po posebnom cjeniku.</p></div>
+    <div class="svc">
+      <div><h3><i>Restaurativa &amp; endodoncija</i>Estetski ispuni i liječenje zuba</h3><p>Estetski ispuni vrhunske kvalitete te ispuni koje pokriva HZZO. Provodimo ručnu i modernu strojnu endodonciju.</p></div>
+      <div><h3><i>Parodontologija</i>Zdravlje desni i zuba</h3><p>Odstranjivanje mekih i tvrdih zubnih naslaga („čišćenje kamenca“), poliranje zubi i pjeskarenje.</p></div>
+      <div><h3><i>Protetika</i>Krunice, mostovi i proteze</h3><p>Metal-keramika, potpuna keramika i cirkon-keramika; djelomične i totalne proteze (akrilat, wironit, thermopress).</p></div>
+      <div><h3><i>Oralna kirurgija</i>Zahvati i implantati</h3><p>Ekstrakcije, zaostali korjenovi, šivanje rana i manji zahvati te pregled i konzultacije za ugradnju implantata.</p></div>
+    </div>
+  </section>
+  <section class="blk" id="tim">
+    <div class="shead"><div><p class="eyebrow">Naš tim</p><h2 style="margin-top:12px">Ljudi koji brinu o vašem osmijehu</h2></div></div>
+    <div class="team">
+      <div class="tc"><div class="av">ĐP</div><h3>dr. med. dent. Đurđica Paušek</h3><span>Doktorica dentalne medicine</span></div>
+      <div class="tc"><div class="av">MT</div><h3>dr. med. dent. Marija Topić</h3><span>Doktorica dentalne medicine</span></div>
+      <div class="tc"><div class="av">DH</div><h3>Daria Havoić Korpar</h3><span>Medicinska sestra</span></div>
+    </div>
+  </section>
+  <section class="blk" id="onama">
+    <div class="contact">
+      <div>
+        <p class="eyebrow">O nama</p>
+        <h2 style="margin:12px 0 18px;font-size:clamp(24px,3vw,34px)">Povjerenje građeno tri desetljeća</h2>
+        <p style="color:var(--muted)">Ordinacija dentalne medicine Đurđica Paušek uspješno posluje od 1994. godine. Naš se tim kontinuirano usavršava i prati nove trendove, materijale i tehnologiju kako bismo u svakom trenutku pružili najbolju moguću uslugu.</p>
+        <p style="color:var(--muted);margin-top:14px">Imamo ugovor s HZZO-om koji pokriva endodontske tretmane, ekstrakcije, liječenje karijesa, skidanje kamenca te određene protetske usluge.</p>
+      </div>
+      <div class="panel" style="background:var(--accent-tint);border-color:#d4e3fb">
+        <p class="eyebrow">Radno vrijeme</p>
+        <table style="margin-top:14px">
+          <tr><td>Ponedjeljak, utorak, četvrtak</td><td>13:00 – 20:30</td></tr>
+          <tr><td>Srijeda, petak</td><td>07:00 – 14:30</td></tr>
+          <tr><td>Subota, nedjelja</td><td>Zatvoreno</td></tr>
+        </table>
+      </div>
+    </div>
+  </section>
+  <section class="blk" id="kontakt">
+    <div class="shead"><div><p class="eyebrow">Kontakt</p><h2 style="margin-top:12px">Naručite se ili nas posjetite</h2></div><a class="btn" href="tel:+38512332377">Nazovite 01 / 2332-377</a></div>
+    <div class="info" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px">
+      <div><span class="k">Adresa</span><span class="v">Božidarevićeva ul. 7<br>Zagreb</span></div>
+      <div><span class="k">Telefon</span><span class="v">01 / 2332-377</span></div>
+      <div><span class="k">E-mail</span><span class="v">info@pausekdental.hr</span></div>
+    </div>
+  </section>
+</div>
+<footer class="wrap">
+  <span>© 2026 Ordinacija dentalne medicine dr. Đurđica Paušek</span>
+  <span>Božidarevićeva ul. 7, Zagreb · 01 / 2332-377</span>
+</footer>
+<div class="dswitch" aria-label="Prebaci dizajn">
+  <span class="dswitch-lbl">Dizajn:</span>
+  <a href="topla.html">Topla</a>
+  <a href="preciznost.html" class="active">Preciznost</a>
+  <a href="otvoreno.html">Otvoreno</a>
+  <a href="index.html" class="dswitch-all">Svi ↑</a>
+</div>
+<style>
+  .dswitch{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:99999;display:flex;align-items:center;gap:3px;background:rgba(18,20,24,.92);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:6px 7px 6px 16px;box-shadow:0 10px 34px rgba(0,0,0,.34);font-family:system-ui,-apple-system,sans-serif}
+  .dswitch-lbl{color:#8b95a1;font-size:12px;letter-spacing:.03em;margin-right:5px}
+  .dswitch a{color:#cfd6de;font-size:13px;font-weight:500;text-decoration:none;padding:7px 14px;border-radius:999px;transition:.15s}
+  .dswitch a:hover{color:#fff;background:rgba(255,255,255,.09)}
+  .dswitch a.active{background:#fff;color:#14171c}
+  .dswitch .dswitch-all{color:#8b95a1;font-size:12px;margin-left:5px;padding-left:12px;border-left:1px solid rgba(255,255,255,.14)}
+  .dswitch .dswitch-all:hover{color:#fff;background:transparent}
+  @media(max-width:560px){.dswitch{bottom:10px;padding:5px 6px 5px 12px}.dswitch-lbl{display:none}.dswitch a{font-size:12px;padding:6px 11px}}
+</style>
+</body>
+</html>

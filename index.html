@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paušek Dental — prijedlozi dizajna</title>
+<meta name="description" content="Prijedlozi dizajna web stranice za Ordinaciju dentalne medicine dr. Đurđica Paušek." />
+<style>
+  :root{--bg:#0F1216;--panel:#171B21;--panel-2:#1E232B;--line:#2A3139;--ink:#EEF1F4;--muted:#9AA6B2;--accent:#6E9BE6}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  a{color:inherit;text-decoration:none}
+  header{padding:64px 0 34px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
+  h1{margin:16px 0 0;font-size:clamp(30px,5vw,46px);line-height:1.1;letter-spacing:-.02em;font-weight:700}
+  header p{margin:16px 0 0;color:var(--muted);max-width:60ch}
+  .grid{display:grid;gap:18px;padding:40px 0 70px}
+  .card{display:grid;grid-template-columns:52px 1fr auto;gap:22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 28px;transition:.2s}
+  .card:hover{background:var(--panel-2);border-color:#38424d;transform:translateY(-2px)}
+  .num{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:18px;background:#121922;color:var(--accent);border:1px solid var(--line)}
+  .card h2{margin:0 0 5px;font-size:21px;font-weight:650;letter-spacing:-.01em}
+  .card p{margin:0;color:var(--muted);font-size:14.5px}
+  .swatch{display:inline-flex;gap:6px;margin-top:12px}
+  .swatch i{width:16px;height:16px;border-radius:4px;display:inline-block;border:1px solid rgba(255,255,255,.1)}
+  .go{font-size:14px;font-weight:600;color:var(--accent);white-space:nowrap}
+  .card:hover .go{text-decoration:underline}
+  footer{border-top:1px solid var(--line);padding:26px 0 60px;color:var(--muted);font-size:13px}
+  @media(max-width:640px){.card{grid-template-columns:1fr;gap:12px}.num{display:none}.go{justify-self:start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Prijedlozi dizajna · Paušek Dental</p>
+    <h1>Tri smjera za novu web stranicu</h1>
+    <p>Ordinacija dentalne medicine dr. Đurđica Paušek. Svaki prijedlog je potpuna naslovnica s pravim sadržajem — kliknite da ga pogledate. (Fotografije su zasad placeholderi.)</p>
+  </header>
+  <div class="grid">
+    <a class="card" href="topla.html">
+      <span class="num">01</span>
+      <div>
+        <h2>Toplo i elegantno</h2>
+        <p>Zemljani tonovi, serif tipografija, velike fotografije — ugodan, „boutique" dojam.</p>
+        <span class="swatch"><i style="background:#F3EFE6"></i><i style="background:#DEE2D2"></i><i style="background:#A9774F"></i><i style="background:#3C3A30"></i></span>
+      </div>
+      <span class="go">Pogledaj →</span>
+    </a>
+    <a class="card" href="preciznost.html">
+      <span class="num">02</span>
+      <div>
+        <h2>Čisto i klinički</h2>
+        <p>Hladni tonovi, plavi akcent, precizan grid s panelom — moderno-medicinski, pouzdano.</p>
+        <span class="swatch"><i style="background:#FBFCFD"></i><i style="background:#EAF1FC"></i><i style="background:#1F55C7"></i><i style="background:#16202A"></i></span>
+      </div>
+      <span class="go">Pogledaj →</span>
+    </a>
+    <a class="card" href="otvoreno.html">
+      <span class="num">03</span>
+      <div>
+        <h2>Moderno i prozračno</h2>
+        <p>Otvoreni editorial raspored, bez kartica, velika tipografija, dublja plava.</p>
+        <span class="swatch"><i style="background:#FCFDFE"></i><i style="background:#EBEFFB"></i><i style="background:#1E3FAE"></i><i style="background:#131A24"></i></span>
+      </div>
+      <span class="go">Pogledaj →</span>
+    </a>
+  </div>
+  <footer>Interni prijedlozi dizajna — nije javna stranica ordinacije. © 2026</footer>
+</div>
+</body>
+</html>
