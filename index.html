@@ -17,82 +17,35 @@
 <style>
   :root{--bg:#0F1216;--panel:#171B21;--panel-2:#1E232B;--line:#2A3139;--ink:#EEF1F4;--muted:#9AA6B2;--accent:#6E9BE6}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
+  body{margin:0;min-height:100dvh;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:560px;margin:0 auto;padding:0 24px}
   a{color:inherit;text-decoration:none}
-  header{padding:64px 0 34px;border-bottom:1px solid var(--line)}
+  header{padding:64px 0 28px}
   .eyebrow{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:600}
-  h1{margin:16px 0 0;font-size:clamp(30px,5vw,46px);line-height:1.1;letter-spacing:-.02em;font-weight:700}
-  header p{margin:16px 0 0;color:var(--muted);max-width:60ch}
-  .grid{display:grid;gap:18px;padding:40px 0 70px}
-  .card{display:grid;grid-template-columns:52px 1fr auto;gap:22px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 28px;transition:.2s}
-  .card:hover{background:var(--panel-2);border-color:#38424d;transform:translateY(-2px)}
-  .num{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:18px;background:#121922;color:var(--accent);border:1px solid var(--line)}
-  .card h2{margin:0 0 5px;font-size:21px;font-weight:650;letter-spacing:-.01em}
-  .card p{margin:0;color:var(--muted);font-size:14.5px}
-  .swatch{display:inline-flex;gap:6px;margin-top:12px}
-  .swatch i{width:16px;height:16px;border-radius:4px;display:inline-block;border:1px solid rgba(255,255,255,.1)}
-  .go{font-size:14px;font-weight:600;color:var(--accent);white-space:nowrap}
-  .card:hover .go{text-decoration:underline}
-  footer{border-top:1px solid var(--line);padding:26px 0 60px;color:var(--muted);font-size:13px}
-  @media(max-width:640px){.card{grid-template-columns:1fr;gap:12px}.num{display:none}.go{justify-self:start}}
+  h1{margin:14px 0 0;font-size:clamp(26px,5vw,36px);line-height:1.15;letter-spacing:-.02em;font-weight:700}
+  .list{display:grid;gap:12px;padding:16px 0 70px}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 24px;transition:.18s}
+  .row:hover{background:var(--panel-2);border-color:#3a444f;transform:translateY(-1px)}
+  .row b{font-size:19px;font-weight:600;letter-spacing:-.01em}
+  .row .go{font-size:14px;font-weight:600;color:var(--accent)}
+  .row:hover .go{text-decoration:underline}
+  footer{color:var(--muted);font-size:13px;padding-bottom:50px}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
-    <p class="eyebrow">Prijedlozi dizajna · Paušek Dental</p>
-    <h1>Pet smjerova za novu web stranicu</h1>
-    <p>Ordinacija dentalne medicine dr. Đurđica Paušek. Svaki prijedlog je potpuna naslovnica s pravim sadržajem — kliknite da ga pogledate. (Fotografije su zasad placeholderi.)</p>
+    <p class="eyebrow">Paušek Dental</p>
+    <h1>Prijedlozi dizajna</h1>
   </header>
-  <div class="grid">
-    <a class="card" href="topla.html">
-      <span class="num">01</span>
-      <div>
-        <h2>Toplo i elegantno</h2>
-        <p>Zemljani tonovi, serif tipografija, velike fotografije — ugodan, „boutique" dojam.</p>
-        <span class="swatch"><i style="background:#F3EFE6"></i><i style="background:#DEE2D2"></i><i style="background:#A9774F"></i><i style="background:#3C3A30"></i></span>
-      </div>
-      <span class="go">Pogledaj →</span>
-    </a>
-    <a class="card" href="preciznost.html">
-      <span class="num">02</span>
-      <div>
-        <h2>Čisto i klinički</h2>
-        <p>Hladni tonovi, plavi akcent, precizan grid s panelom — moderno-medicinski, pouzdano.</p>
-        <span class="swatch"><i style="background:#FBFCFD"></i><i style="background:#EAF1FC"></i><i style="background:#1F55C7"></i><i style="background:#16202A"></i></span>
-      </div>
-      <span class="go">Pogledaj →</span>
-    </a>
-    <a class="card" href="otvoreno.html">
-      <span class="num">03</span>
-      <div>
-        <h2>Moderno i prozračno</h2>
-        <p>Otvoreni editorial raspored, bez kartica, velika tipografija, dublja plava.</p>
-        <span class="swatch"><i style="background:#FCFDFE"></i><i style="background:#EBEFFB"></i><i style="background:#1E3FAE"></i><i style="background:#131A24"></i></span>
-      </div>
-      <span class="go">Pogledaj →</span>
-    </a>
-    <a class="card" href="mirno.html">
-      <span class="num">04</span>
-      <div>
-        <h2>Mirno i spa</h2>
-        <p>Meko, prozračno, zaobljeno — eukaliptus-zeleni akcent i velike fotografije. „Dental kao ugodno iskustvo", po uzoru na najbolje 2026.</p>
-        <span class="swatch"><i style="background:#FAF9F5"></i><i style="background:#E5EBE1"></i><i style="background:#5E8575"></i><i style="background:#2A302C"></i></span>
-      </div>
-      <span class="go">Pogledaj →</span>
-    </a>
-    <a class="card" href="klasik.html">
-      <span class="num">05</span>
-      <div>
-        <h2>Klasik (boje postojećeg weba)</h2>
-        <p>Plava + zelena (kao sadašnja stranica) + crno-bijele fotografije — moderniji, čišći redizajn istog brend-identiteta.</p>
-        <span class="swatch"><i style="background:#FFFFFF"></i><i style="background:#AAB2B9"></i><i style="background:#1A6CB3"></i><i style="background:#3F9A44"></i></span>
-      </div>
-      <span class="go">Pogledaj →</span>
-    </a>
+  <div class="list">
+    <a class="row" href="topla.html"><b>Dizajn 1</b><span class="go">Pogledaj →</span></a>
+    <a class="row" href="preciznost.html"><b>Dizajn 2</b><span class="go">Pogledaj →</span></a>
+    <a class="row" href="otvoreno.html"><b>Dizajn 3</b><span class="go">Pogledaj →</span></a>
+    <a class="row" href="mirno.html"><b>Dizajn 4</b><span class="go">Pogledaj →</span></a>
+    <a class="row" href="klasik.html"><b>Dizajn 5</b><span class="go">Pogledaj →</span></a>
   </div>
-  <footer>Interni prijedlozi dizajna — nije javna stranica ordinacije. © 2026</footer>
+  <footer>Ordinacija dentalne medicine dr. Đurđica Paušek · Zagreb</footer>
 </div>
 </body>
 </html>
